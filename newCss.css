@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+ol, ul {
+      list-style: none;
+}
+blockquote, q {
+      quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+      content: '';
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+/*One more for me*/
+a {
+      text-decoration:none;
+}
+/*reset end*/
+
+
+body {
+      line-height: 1.4em;
+      width:1264px;
+      margin: 0 auto;
+      color:#666;
+      background-image:url(lghtmesh.gif); 
+      font-family: Arial, "MS Trebuchet", sans-serif;
+}
+div#container{
+      background-color:rgba(205,133,63,0.2);
+}
+     
+a { 
+      color:#065588;
+}
+a:hover {
+      color:#1794E8;
+      text-decoration:underline;
+}
+header {
+      padding:20px 0;
+}
+#logo {
+      display: inline-block;
+      font-size: 3em;
+      margin: 50px 490px;
+}
+#logo a{
+      padding: 7px;
+      margin:16px;
+}
+#logo a:hover{
+      padding:20px;
+      margin: 0;
+}
+#landing{
+      border-top:dotted 3px #9999CC;
+      border-bottom:dotted 3px #9999CC;
+      text-align:center;
+      background-color:rgb(255,255,0);
+      padding:1em 30px;
+      font-family:sans-serif;
+      font-size:1.3em;
+      margin:10px 0;
+      line-height:1.4em;
+}
+#content{
+      padding: 20px 50px;
+}
+h2,h3,h4{
+      line-height:1em;}
+h2{
+      font-size:3.7em;
+      margin-bottom: 30px;
+}
+h3{
+      font-size:2em;
+      margin-bottom: 10px;
+}
+
+h4{
+      font-size:1.8em;
+      text-align:center;
+      margin-bottom: 25px;
+}
+section{
+      border-left: 2px solid #CCCCFF;
+      border-right: 2px solid #CCCCFF;
+      width:800px;
+      float: left;
+      border-radius:0.7em;
+      background-color: rgba(255,255,255,0.8);
+}
+article{
+      margin: 25px 0;
+}
+aside{
+      border-top:1px solid #9999CC;
+      float:right;
+      width:238px;
+      background-color:rgba(0,0,255,0.03);
+      border-radius:10px;
+}
+.common{
+      margin:10px 10px 50px 10px;
+      padding:20px 15px;
+}
+.date{ 
+      margin-bottom: 3px;
+      color:green;
+      text-decoration:underline;
+}
+.update{
+      margin:15px 0;
+}
+footer{
+      border-top:solid 1px #9999CC;
+      clear: both;
+      margin:60px 0;}
+footer nav{
+      margin:10px 350px;
+}
+footer nav a{
+      float:left;
+      margin:18px 10px;
+      padding:2px;
+}
+footer nav a:hover{
+      margin:13px 5px;
+      padding:7px;
+}
+footer p{font-size:80%;text-align:center;display: inline;float:right;margin-top:50px;margin-bottom:10px;}
+.theme a{
+      font-family: verdana;
+      border-radius:0.7em;
+      color:#696969;
+      line-height:1em;
+      -webkit-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+}
+.theme a:hover{
+      color:white;
+      background-color:rgba(0,0,0,0.5);
+      text-decoration:none;
+}

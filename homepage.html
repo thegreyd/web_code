@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Rock-Paper-Scissor</title>
+  <script type="text/javascript"> 
+function Player(){
+        
+        this.naming=function(){
+           this.name=prompt("Enter your name");
+           if(typeof this.name!=="string"){this.name="Player";}
+        };
+        var choose;
+        var simplify;
+        this.play=function(){
+            choose=prompt("Enter rock/paper/scissor");
+            while((typeof choose)!=="string")
+               {
+                 choose=prompt("Invalid input. Enter rock/paper/scissor");
+               }
+        simplify=choose.toLowerCase();};
+        this.choice=function(){return simplify;};
+    }
+
+function Comp(){
+        
+        this.naming=function(){
+            this.name=prompt("Name your nemesis");
+            if(typeof this.name!=="string"){this.name="Computer";}
+        };
+        var choices=["rock","paper","scissor"];
+        var select;
+        this.play=function(){
+            var i=Math.floor(Math.random()*3);
+            select=choices[i];
+        };
+        this.choice=function(){return select;};
+}
+
+function decideWinner(Player,Comp){
+    
+    if(Player.choice()==="rock"){
+        if(Comp.choice()==="rock"){return "Match draw.";}
+        else if(Comp.choice()==="scissor"){return Player.name;}
+        else{return Comp.name;}
+    }
+    else if(Player.choice()==="paper"){
+        if(Comp.choice()==="rock"){return Player.name;}
+        else if(Comp.choice()==="scissor"){return Comp.name;}
+        else{return "Match draw.";}
+    }
+    else if(Player.choice()==="scissor"){
+        if(Comp.choice()==="rock"){return Comp.name;}
+        else if(Comp.choice()==="scissor"){return "Match draw.";}
+        else{return Player.name;}
+    }
+    else{return 0;}
+    
+}
+
+function declareWinner(Player,Comp,a){
+    if(a===0){alert("Invalid Input. Play again.");}
+    else{
+        alert(Player.name+" : "+Player.choice()); 
+		alert(Comp.name+" : "+Comp.choice()); 
+		alert("Winner : "+a);
+    }
+}
+
+var PlayGame = function(){
+    
+    var cont=true;
+    
+    var newcomp=new Comp();
+    var newplayer= new Player();
+    
+    newplayer.naming();
+    newcomp.naming();
+    
+    while(cont===true){
+         newplayer.play();
+         newcomp.play();
+         var win=decideWinner(newplayer,newcomp);
+         declareWinner(newplayer,newcomp,win);
+         cont=confirm("Continue Playing Game?");
+    }
+};
+</script>
+  
+</head>
+
+<body>
+ <div id="page">
+    <h1>Rock Paper Scissor</h1>
+	<p>Play the best game in the world!</p>
+    <div id="content">
+	      <h2><a href="#">PLAY</a></h2>
+	</div>
+ </div>
+<script type="text/javascript"> 
+var h2=document.getElementsByTagName('a')[0];
+h2.addEventListener('click' , PlayGame , false);
+h2.preventDefault();
+</script>
+</body>
+</html>

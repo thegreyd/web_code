@@ -1,0 +1,69 @@
+body{
+  background:#eee;
+  line-height: 1.5em;
+  font-family: Sans-Serif;font-size:90%;
+  width:1230px;padding:10px;margin: 0 auto;
+}
+
+a{
+text-decoration: none;color:purple;
+}
+
+p{text-align: justify;}
+
+a:hover{color:violet;}
+
+h3{font-size: 25px;text-align: center;}
+
+#header{font-size:28px;text-indent: 20px;color:#696969;}
+
+#page {
+  padding:20px 35px 20px 35px;
+  }
+
+#logo{
+  color: black;
+  font-family: Monospace;
+  
+  font-size: 25px;
+  margin: 5px 10px 30px 430px;
+  border:3px #696969 solid ;display:inline-block;/*border-radius: 50px;*/
+  }
+
+#logo a{color:#696969;display:block;}
+
+#logo a:hover{color:white;background-color: #696969;}
+
+#intro{
+  font-family: Georgia;font-size: 17px;line-height: 1.6em;padding-bottom: 15px;
+}
+
+#content{
+   padding:10px 30px 10px 30px;
+  margin-bottom: 25px;width: 800px;
+  background:white;
+  float:left;border-right:2px #ccc solid;
+  border-left:2px #ccc solid;
+  border-radius:10px;
+}
+
+#newexp{padding-left: 50px;}
+
+#sidebar{
+
+  color:#696969;border-top:2px #ccc solid;
+  padding:10px 10px 10px 10px;
+  width:250px;margin-bottom:25px;float:right;
+}
+
+
+#footer{
+ border-bottom: 2px #ccc solid;clear:both;
+  }
+
+#nav ul{width:400px;margin-left:400px;}
+
+#nav ul li{margin-right:30px;display:inline-block;font-size: 20px;font-family: monospace; }
+
+#made{text-align:right;width:300px;float:right;margin:15px;font-family: georgia;}
+
